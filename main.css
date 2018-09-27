@@ -7,9 +7,21 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: end;
     height: 100px;
+    background: radial-gradient( white, black);
+    opacity:0;
+}
+.fullname:hover{
+    opacity:1;
+    transition: ease-in-out 2s;
+}
+.contact {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: end;
+    height: 100px;
 }
 .container{
-    background-color: blue;
+    background-color: black;
     display: grid;
     /* defining how many columns there will be */
     grid-template-columns: 1fr 1fr 1fr;
@@ -19,25 +31,31 @@ body {
     
         "header header header"
         "nav blog blog"
+        "nav footer footer"
         "nav footer footer";
+        ;
     grid-gap: 10px;
 }
 .header{
     grid-area: header;
-    border: 3px solid;
+    border: 5px solid;
     text-align: center;
-    padding: 15px;}
+    padding: 15px;
+}
+#p1 {
+    color: aliceblue;
+}
 .nav{
     grid-area: nav;
-    border: white solid;
-    height: 600px;
+    border: solid;
+    height: 620px;
 }
-#id {
-    height: 500px;
-    width: 200px;
-
-
+#pic {
+    height: 620px;
+    margin-left: 5px;
+    width: 500px;
 }
+
 .blog{
     grid-area: blog;
     text-decoration: none;
@@ -48,6 +66,10 @@ body {
     grid-area: footer;
     border: solid;
     text-decoration: none;
+    overflow: scroll;
+}
+#resume {
+    margin-left: 170px;
 }
 a {
     text-decoration: none;
