@@ -19,7 +19,7 @@ body {
     
         "header header header"
         "nav blog blog"
-        "footer footer footer";
+        "nav footer footer";
     grid-gap: 10px;
 }
 .header{
@@ -29,7 +29,14 @@ body {
     padding: 15px;}
 .nav{
     grid-area: nav;
-    border: solid;
+    border: white solid;
+    height: 600px;
+}
+#id {
+    height: 500px;
+    width: 200px;
+
+
 }
 .blog{
     grid-area: blog;
@@ -40,4 +47,10 @@ body {
 .footer{
     grid-area: footer;
     border: solid;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
 }
