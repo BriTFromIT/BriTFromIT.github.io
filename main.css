@@ -1,9 +1,15 @@
 
-.parentcontainer > div {
-    border: solid;
-    color: blue;
+body {
+    background-color: black;
 }
-.parentcontainer{
+.fullname {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: end;
+    height: 100px;
+}
+.container{
+    background-color: blue;
     display: grid;
     /* defining how many columns there will be */
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,14 +24,20 @@
 }
 .header{
     grid-area: header;
-    
-}
+    border: 3px solid;
+    text-align: center;
+    padding: 15px;}
 .nav{
     grid-area: nav;
+    border: solid;
 }
 .blog{
     grid-area: blog;
+    text-decoration: none;
+    color: black;
+    border: solid;
 }
 .footer{
-    grid-area: footer
+    grid-area: footer;
+    border: solid;
 }
