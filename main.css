@@ -1,0 +1,31 @@
+
+.parentcontainer > div {
+    border: solid;
+    color: blue;
+}
+.parentcontainer{
+    display: grid;
+    /* defining how many columns there will be */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* defines how many rows there will be */
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas:
+    
+        "header header header"
+        "nav blog blog"
+        "footer footer footer";
+    grid-gap: 10px;
+}
+.header{
+    grid-area: header;
+    
+}
+.nav{
+    grid-area: nav;
+}
+.blog{
+    grid-area: blog;
+}
+.footer{
+    grid-area: footer
+}
